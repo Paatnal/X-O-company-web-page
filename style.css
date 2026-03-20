@@ -1,0 +1,114 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+color: #1e90ff;
+}
+
+.hero{
+    background-image: url('shop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+section{
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.product-card img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.shop-section{
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-box{
+    width: 220px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    box-shadow: o 4px 10px rgba(0,0,0,0.7);
+    transition: 0.3s;
+}
+
+.category-box img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.category-box h3{
+    padding: 15px;
+}
+
+.category-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
